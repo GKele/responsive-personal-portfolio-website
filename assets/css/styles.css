@@ -1,0 +1,64 @@
+/*-----------------------FONT--------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*-----------------------VARIAVEIS COR CSS--------------------------*/
+:root{
+    --header-height: 3.5rem;
+
+    /*Cores modo hsl: Hue = tom, Saturation = saturação e Lightness = luminosidade.*/
+
+    --primeira-tonalidade: 250;
+    --saturacao: 66%;
+    --luminosidade: 75%;
+    --segunda-tonalidade: 219;
+
+    --primeira-coor: hue(var(--primeira-tonalidade), var(--saturacao), var(--luminosidade));
+    --primeira-cor-alt: hue(var(--primeira-tonalidade), var(--saturacao), 71%); /*Possue -4% de luminosidade (mais escuro)*/
+    --titulo-cor: hue(var(--segunda-tonalidade), 15%, 95%);
+    --texto-cor: hue(var(--segunda-tonalidade), 8%, 75%);
+    --texto-cor-claro: hue(var(--segunda-tonalidade), 4%, 55%);
+    --body-cor: hue(var(--segunda-tonalidade), 48%, 8%);
+    --container-cor: hue(var(--segunda-tonalidade), 32%, 12%);
+
+    /*-----------------------VARIAVEIS FONTE E TAMANHO CSS--------------------------*/
+    /* 1rem = 16px */
+    --body-font: 'Poppins', sans-sarif;
+    --grande-font-size: 1.75em;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --menor-font-size: .813rem;
+    --pequena-font-size: .75rem;
+    --minuscula-font-size: .625rem;
+
+    /*-----------------------ESPESSURA DA FONTE--------------------------*/
+    --font-media: 500;
+    --font-semi-negrito: 600;
+
+    /*-----------------------Z INDEX--------------------------*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/*-----------------------TIPOGRAFIA RESPONSIVA--------------------------*/
+@media screen and (min-width: 968px) {
+    :root {
+        --grande-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --menor-font-size: .875rem;
+        --pequena-font-size: .813rem;
+        --minuscula-font-size: .625rem;        
+    }
+}
+
+/*-----------------------ZERAR CSS PADRÃO--------------------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
